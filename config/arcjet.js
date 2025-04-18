@@ -8,8 +8,7 @@ const aj = arcjet({
         shield({ mode: "LIVE" }),
         detectBot({
             mode: "LIVE",
-            allow: ["CATEGORY:SEARCH_ENGINE", "POSTMAN"],
-            allowUserAgent: ["PostmanRuntime/"],
+            allow: ["CATEGORY:SEARCH_ENGINE", "CATEGORY:TOOL", "NAME:POSTMAN"],
             applyRateLimit: true,
         }),
         tokenBucket({
